@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        echo 'This a try.'
+        echo '=======================start======================='
+        sh '''who
+echo $ANDROID_HOME
+pwd'''
       }
     }
   }
